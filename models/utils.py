@@ -24,8 +24,10 @@ def load_real_samples(filename):
     X1 = (X1 - 127.5) / 127.5
     X2 = (X2 - 127.5) / 127.5
     return [X1, X2]
- 
+
 # select a batch of random samples, returns images and target
+
+
 def generate_real_samples(dataset, n_samples, patch_shape):
     # choose random instances
     ix = randint(0, dataset.shape[0], n_samples)
@@ -34,25 +36,28 @@ def generate_real_samples(dataset, n_samples, patch_shape):
     # generate 'real' class labels (1)
     y = ones((n_samples, patch_shape, patch_shape, 1))
     return X, y
- 
+
 # generate a batch of images, returns images and targets
+
+
 def generate_fake_samples(g_model, dataset, patch_shape):
     # generate fake instance
     X = g_model.predict(dataset)
     # create 'fake' class labels (0)
     y = zeros((len(X), patch_shape, patch_shape, 1))
     return X, y
- 
+
 # save the generator models to file
+
+
 def save_models(step, g_model_AtoB, g_model_BtoA):
     # save the first generator model
-    filename1 = 'g_model_AtoB_%06d.h5' % (step+1)
+    filename1 = 'g_model_AtoB_%06d.h5' % (step + 1)
     g_model_AtoB.save(filename1)
     # save the second generator model
-    filename2 = 'g_model_BtoA_%06d.h5' % (step+1)
+    filename2 = 'g_model_BtoA_%06d.h5' % (step + 1)
     g_model_BtoA.save(filename2)
     print('>Saved: %s and %s' % (filename1, filename2))
- 
 
 
 # In[7]:
@@ -78,11 +83,13 @@ def summarize_performance(step, g_model, trainX, name, n_samples=5):
         pyplot.axis('off')
         pyplot.imshow(X_out[i])
     # save plot to file
-    filename1 = '%s_generated_plot_%06d.png' % (name, (step+1))
+    filename1 = '%s_generated_plot_%06d.png' % (name, (step + 1))
     pyplot.savefig(filename1)
     pyplot.close()
- 
+
 # update image pool for fake images
+
+
 def update_image_pool(pool, images, max_size=50):
     selected = list()
     for image in images:

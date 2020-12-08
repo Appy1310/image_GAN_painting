@@ -2,7 +2,7 @@ import random
 import os
 import sys
 import urllib.request
-import shutil #from os import listdir
+import shutil  # from os import listdir
 from random import random
 import numpy as np
 from numpy import load, zeros, ones, asarray
@@ -39,10 +39,7 @@ from matplotlib import pyplot
 # model_monet.compile(loss=['mse', 'mae', 'mae', 'mae'], loss_weights=[1, 5, 10, 10], optimizer=keras.optimizers.Adam(lr=0.0002, beta_1=0.5))
 
 
-
-
-
-def load_image(filename, size=(256,256)):
+def load_image(filename, size=(256, 256)):
     # load and resize the image
     pixels = load_img(filename, target_size=size)
     # convert to numpy array
@@ -53,6 +50,7 @@ def load_image(filename, size=(256,256)):
     pixels = (pixels - 127.5) / 127.5
     return pixels
 
+
 def paint_generator(model, image, name):
     # translate image
     image_tar = model.predict(image)
@@ -62,6 +60,7 @@ def paint_generator(model, image, name):
     plt.imshow(image_tar[0])
     plt.axis('off')
     plt.savefig(f'./static/img/{name}')
-    plt.show()    
+    plt.show()
 
-print('It is working!')    
+
+print('It is working!')
