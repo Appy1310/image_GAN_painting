@@ -13,9 +13,8 @@ from matplotlib import pyplot
 
 
 from CycleGAN import CycleGAN
-from utils import  generate_real_samples, generate_fake_samples, load_real_samples
+from utils import generate_real_samples, generate_fake_samples, load_real_samples
 from utils import save_models, summarize_performance, update_image_pool
-
 
 
 # sample data with proper path
@@ -45,7 +44,6 @@ print('model loading succesful!')
 # c_model_AtoB = model.define_composite_model(g_model_AtoB, d_model_B, g_model_BtoA, image_shape)
 # # composite: B -> A -> [real/fake, B]
 # c_model_BtoA = model.define_composite_model(g_model_BtoA, d_model_A, g_model_AtoB, image_shape)
-
 
 
 # train models
