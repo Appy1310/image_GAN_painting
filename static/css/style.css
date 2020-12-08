@@ -1,0 +1,59 @@
+/* The General Rule:
+
+selector {
+    property: value;
+    anotherproperty: value;
+
+    light blue #a2d7ff
+    curry brown #dea01e
+    eggwhite #f1f1e6
+
+ 
+} */
+
+/*
+body {
+    background-color: #085e97;
+}
+*/
+
+/* predefined element selection */ 
+li {
+    color: #271711;
+}
+
+a {
+    color: #271711;
+}
+
+
+
+body {
+    background-image: url('https://singularityhub.com/wp-content/uploads/2019/06/Ai-Da-Cartesian-Painting-4-artificial-intelligence-art.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px 700px;
+    
+}
+
+
+/* inline span ID selection */
+#ofixer {
+    color:#521e06;
+    font-family: Verdana;
+    font-size: larger;
+}
+
+/* block div class selection */
+.container {
+    color: #063052;
+    font-size: larger;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+
+
+

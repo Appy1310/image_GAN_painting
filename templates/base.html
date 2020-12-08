@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Normalize CSS, Skeleton CSS, Animate CSS, Custom CSS, Fonts --> 
+
+    <link rel='stylesheet' href="{{ url_for('static', filename='/css/style.css')}}" >
+    <link  rel='shortcut icon'  type='img/png' href="{{ url_for('static', filename='img/logo.png') }}">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
+    <title>Movie Search test</title>
+  </head>
+  
+  <body>
+    <div class="container">    
+
+        {% block content %}
+                <!-- define your main content in here in other temaplates-->  
+                
+        {% endblock %}
+      </div>   
+        <footer>
+            <hr>
+            <p>Awesome painting creator!</p>
+        </footer>
+  </body>
+  
+
+
+</html>
+

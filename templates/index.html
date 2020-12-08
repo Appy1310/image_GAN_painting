@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>  <span id="ofixer">Awesome painting creator! </span> </h1>
+
+<!-- <form action="/movie/search">
+   <input type="text" name="q" ><br>
+   <input type="submit">
+  </form> -->
+
+  <h2>Select an artist from the drop-down list:</h2>
+
+  <!-- <p>Choose an artist from the drop-down list:</p> -->
+  
+  <form action='/'>
+    <label for="artist">Choose an artist:</label>
+    <select id="artist" name="artists">
+      <option value="vincent-van-gogh">Vincent-Van-Gogh</option>
+      <option value="claude-monet">Clause-Monet</option>
+      <!-- <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option> -->
+    </select>
+    <input type="submit">
+  </form>
+  
+  <br>
+
+
+  <form method=post enctype=multipart/form-data>
+    <input type=file name=file><br>
+    <input type=submit value=Upload>
+  </form>
+
+
+  <!-- <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+  </form> -->
+
+ <!-- <form action="/movie/recommender-inside">
+   <p>If you are already an user in the database, then type the user_id number downstairs</p>
+   User_Id:
+   <input type="text" name="q" >
+   <input type="submit">
+  </form>  -->
+
+
+  <!-- <form action="/movie/recommender-outside">
+    <p>Otherwise, Please suggest name of 5 movies you like to get your recommendations</p>
+    Movie 1:
+    <input type="text" name="Movie1" ><br>
+    Movie 2:
+    <input type="text" name="Movie2" ><br>
+    Movie 3:
+    <input type="text" name="Movie3" ><br>
+    Movie 4:
+    <input type="text" name="Movie4" ><br>
+    Movie 5:
+    <input type="text" name="Movie5" ><br>
+    <input type="submit">
+  </form>  -->
+
+
+<!-- <form action="/recommender">
+    <p>Please rate the following movies on a scale from 0.0 to 5.0:</p>
+    Movie 1:
+    <input type="text" name="Movie1" >:
+    <input type="text" name="movie1" placeholder="0.0 - 5.0"><br>
+    Movie 2:
+    <input type="text" name="movie2" placeholder="0.0 - 5.0"><br>
+    Movie 3:
+    <input type="text" name="movie3" placeholder="0.0 - 5.0"><br>
+    Movie 4:
+    <input type="text" name="movie4" placeholder="0.0 - 5.0"><br>
+    Movie 5:
+    <input type="text" name="movie5" placeholder="0.0 - 5.0"><br>
+    <input type="submit">
+  </form> -->
+
+
+{% endblock %}

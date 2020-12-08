@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> movie title: {{ movie.title }}, movie id: {{ movie_id }}</h1>
+
+<h2> {{movie.genres}} </h2>
+
+<img src="{{ movie_poster }}" alt= {{ movie.title }} width="500" height="500">
+
+<!-- <img src="https://media.giphy.com/media/4ryp9Ihw0BEyc/giphy.gif" alt="Titanic"> -->
+
+{% endblock %}

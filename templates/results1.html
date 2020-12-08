@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> Your search results for recommendation</h1>
+
+
+
+
+<ul>
+    {% for result in recommendation_list %}
+        <li> 
+            <!-- links in html -->
+            <a href="{{ url_for('recommender') }}"> {{ result }}</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href='/'>Go back home</a>
+
+
+
+
+{% endblock %}
