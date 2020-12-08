@@ -1,3 +1,6 @@
+
+![Format python code](https://github.com/Appy1310/image_GAN_painting/workflows/Format%20python%20code/badge.svg)
+
 # imageGAN
 
 Built a keras class CycleGAN model (Generative Adversarial Netowrk) to train models for different artists
@@ -5,8 +8,16 @@ Built a keras class CycleGAN model (Generative Adversarial Netowrk) to train mod
 
 Finally one can use app.py to deploy the models in FLASK.
 
+From photo to Van-Gogh
+![](phototovangogh.gif)
 
-![](model_mobilenet.png)
+From Van-Gogh to photo
+![](vangoghtophoto.gif)
+
+
+
+
+
 
 
 ## Usage
